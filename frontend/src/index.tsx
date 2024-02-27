@@ -8,7 +8,6 @@ import App from "./App";
 import "./index.css";
 import { persistor, store } from "./redux/configureStore";
 import reportWebVitals from "./reportWebVitals";
-import "i18n/i18n";
 import en from "javascript-time-ago/locale/en.json";
 import vi from "javascript-time-ago/locale/vi.json";
 import "quill/dist/quill.snow.css";

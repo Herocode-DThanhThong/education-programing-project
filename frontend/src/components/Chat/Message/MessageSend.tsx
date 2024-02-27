@@ -1,6 +1,5 @@
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { en, vi } from "constants/localeTime";
-import i18n from "i18n/i18n";
 import ReactTimeAgo from "react-time-ago";
 import { Message } from "types/ChatType";
 import Viewer from "react-viewer";
@@ -11,7 +10,6 @@ interface Props {
 }
 
 const MessageSend = ({ mess }: Props) => {
-  const currentLanguage = i18n.language as "vi" | "en";
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex w-full mt-2 space-x-3 max-w-xs ml-auto justify-end">

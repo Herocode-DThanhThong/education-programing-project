@@ -8,7 +8,6 @@ interface Props {}
 
 const SearchMessenger = (props: Props) => {
   // Hooks
-  const { t } = useTranslation("chat");
   const { friendsSearching, searchFriend } = useFriend();
 
   // Handler
@@ -40,7 +39,7 @@ const SearchMessenger = (props: Props) => {
           type="search"
           id="default-search"
           className="block w-full outline-none py-2 px-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-          placeholder={t("inbox.searchFriend")}
+          placeholder={"Tim kiem ban be"}
           required
         />
 
