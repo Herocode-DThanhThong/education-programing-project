@@ -1,0 +1,12 @@
+{
+  "chatBottom": {
+    "enterMessagePlaceHolder": "Nhập tin nhắn..."
+  },
+  "inbox": {
+    "chats": "Nhắn tin",
+    "searchFriend": "Tìm kiếm bạn bè"
+  },
+  "conversation": {
+    "you": "Bạn"
+  }
+}

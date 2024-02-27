@@ -1,0 +1,138 @@
+databaseChangeLog:
+  -  changeSet:
+      id:  1
+      author:  bcminh
+      changes:
+        -  createTable:
+            tableName:  user
+            columns:
+              -  column:
+                  name:  id
+                  type:  bigint
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              -  column:
+                  name:  username
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+                    uniqueConstraintName : "ux_username"
+                    unique : true
+              -  column:
+                  name:  password
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              -  column:
+                  name:  firstname
+                  type:  varchar(50)
+              -  column:
+                  name:  lastname
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              -  column:
+                  name:  email
+                  type:  varchar(191)
+                  constraints:
+                    nullable:  false
+                    uniqueConstraintName : "ux_email"
+                    unique : true
+              -  column:
+                  name:  image_url
+                  type:  varchar(256)
+              -  column:
+                  name:  created_by
+                  type:  varchar(50)
+              -  column:
+                  name:  created_date
+                  type:  timestamp
+              -  column:
+                  name:  last_modified_by
+                  type:  varchar(50)
+              -  column:
+                  name:  last_modified_date
+                  type:  timestamp
+
+        -  createTable:
+            tableName:  authority
+            columns:
+                  name:  name
+                  type:  varchar(50)
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+
+        -  createTable:
+            tableName:  user_authority
+            columns:
+              -  column:
+                  name:  user_id
+                  type:  bigint
+                  constraints:
+                    nullable:  false
+              -  column:
+                  name:  authority_name
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+        - addPrimaryKey:
+            tableName:  user_authority
+            columnNames:  user_id, authority_name
+            
+        - loadData:
+            tableName: user
+            file: config/db/data/user.csv
+            separator: ;
+            columns:
+              -  column:
+                  name:  id
+                  type:  numeric
+              -  column:
+                  name:  activated
+                  type:  boolean
+              -  column:
+                  name:  created_date
+                  type:  timestamp
+
+        - addDefaultValue:
+             tableName: user
+             columnName: created_date
+             columnDataType: datetime
+
+        - loadData:
+            tableName: user
+            file: config/db/data/user.csv
+            separator: ;
+            columns:
+              -  column:
+                  name:  id
+                  type:  numeric
+              -  column:
+                  name:  activated
+                  type:  boolean
+              -  column:
+                  name:  created_date
+                  type:  timestamp
+        
+        - loadData:
+            tableName: authority
+            file: config/db/data/authority.csv
+            separator: ;
+            usePreparedStatements: true
+            columns:
+              -  column:
+                  name:  name
+                  type:  string
+                  
+        - loadData:
+            tableName: user_authority
+            file: config/db/data/user_authority.csv
+            separator: ;
+            usePreparedStatements: true
+            columns:
+              -  column:
+                  name:  user_id
+                  type:  numeric

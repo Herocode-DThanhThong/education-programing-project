@@ -1,0 +1,9 @@
+{
+  "createNewPost": {
+    "liveVideo": "Live Video",
+    "photoVideo": "Photo/Video",
+    "feelingActivity": "Feeling/Activity",
+    "createNewPost": "Create New Post",
+    "inputPlaceholder": "What's news, "
+  }
+}

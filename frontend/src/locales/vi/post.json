@@ -1,0 +1,39 @@
+{
+  "postTop": {
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "editPost": "Chỉnh sửa nội dung bài viết",
+    "enterYourContent": "Nhập vào nội dung",
+    "cancel": "Hủy",
+    "update": "Cập nhật",
+    "dialogRemoveContent": "Bạn chắc chắn muốn xóa bài viết này?"
+  },
+  "postContent": {
+    "like": "Thích",
+    "comment": "Bình luận",
+    "share": "Chia sẻ"
+  },
+  "postBottom": {
+    "like": "Thích",
+    "comment": "Bình luận",
+    "share": "Chia sẻ",
+    "edit": "Chỉnh sửa",
+    "reply": "Phản hồi",
+    "delete": "Xóa",
+    "editComment": "Chỉnh sửa bình luận",
+    "submit": "Lưu",
+    "showMoreReply": "Xem thêm phản hồi .....",
+    "hideReply": "Ẩn phản hồi .....",
+    "replyComment": "Phản hồi bình luận",
+    "image": "Hình ảnh",
+    "changeImage": "Thay đổi hình ảnh",
+    "enterYourContent": "Nhập vào nội dung"
+  },
+  "postNotFound": {
+    "subject": "Nội dung này không có sẵn ngay bây giờ",
+    "description": "Khi điều này xảy ra, thường là do chủ sở hữu chỉ chia sẻ nó với một nhóm nhỏ người, thay đổi những người có thể nhìn thấy nó hoặc nó đã bị xóa"
+  },
+  "searchPost": {
+    "title": "Tìm kiếm bài viết"
+  }
+}

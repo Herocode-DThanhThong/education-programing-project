@@ -1,0 +1,12 @@
+{
+  "chatBottom": {
+    "enterMessagePlaceHolder": "Type your message..."
+  },
+  "inbox": {
+    "chats": "Chats",
+    "searchFriend": "Search friend to chat"
+  },
+  "conversation": {
+    "you": "You"
+  }
+}

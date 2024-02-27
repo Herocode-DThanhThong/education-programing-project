@@ -1,0 +1,13 @@
+{
+  "friendRequest": {
+    "title": "Lời mời kết bạn",
+    "noFriendsRequest": "Không có lời mời kết bạn nào",
+    "confirm": "Xác nhận",
+    "delete": "Xóa"
+  },
+  "friendSuggest": {
+    "title": "Những người bạn có thể biết",
+    "noFriendsSuggest": "Không có gợi ý nào",
+    "addFriend": "Thêm bạn"
+  }
+}
