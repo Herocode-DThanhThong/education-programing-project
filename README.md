@@ -31,7 +31,7 @@ $ npm start
 * Backend:
 
 Create database ***lvtn*** in PostgreSQL before start application
-
+Run application:
 ```
 $ cd .\backend
 $ mvn package -DskipTests
