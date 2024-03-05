@@ -16,10 +16,10 @@ $ cd <project_dir>
 
 Create an environment variable file .env in the root of the project and inside add:
 ```
-    REACT_APP_CLOUDINARY_UPLOAD_PRESET = "<Your cloud upload preset>"
-	REACT_APP_CLOUDINARY_UPLOAD_FOLDER = "<Your cloud upload folder>"
-	REACT_APP_CLOUDINARY_UPLOAD_CLOUD_NAME = "<Your cloud name>"
-	REACT_APP_CLOUDINARY_DOMAIN = "<Your cloud domain>"
+REACT_APP_CLOUDINARY_UPLOAD_PRESET = "<Your cloud upload preset>"
+REACT_APP_CLOUDINARY_UPLOAD_FOLDER = "<Your cloud upload folder>"
+REACT_APP_CLOUDINARY_UPLOAD_CLOUD_NAME = "<Your cloud name>"
+REACT_APP_CLOUDINARY_DOMAIN = "<Your cloud domain>"
 ```
 Run application:
 ```
